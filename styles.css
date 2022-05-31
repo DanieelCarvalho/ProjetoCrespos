@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;0,600;1,100;1,500&family=Mukta:wght@200;400;800&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;0,600;1,100;1,500&family=Mukta:wght@200;400;800&family=Open+Sans:wght@300&family=Playfair+Display:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+html{
+    font-size: 16px;
+}
+header{
+    max-width: 1366px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #DBDBDB;
+}
+.header_menu{
+    display: none;
+}
+.header_logo{
+    width: 15%;
+    text-align: center;
+}
+.header_logo img{
+    width: 8vw;
+}
+nav{
+   width: 50%;
+   color: #9767A9;
+   font-size: 1rem;
+ 
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 49.5vw;
+}
+ nav a {
+    text-decoration: none;
+}
+nav li{
+   font-size: 1vw;
+   text-decoration: none;
+}
+header input{
+    border-radius: 10px;
+    padding-left: 2vw;
+    border: 2px solid #9767A9;
+    height: 3.9vh;
+    width: 12%;
+    background-image: url('img/Layer_3.png');
+    background-size: 10%;
+    background-position: 3px 4px;
+    background-repeat: no-repeat;
+
+}
+ header input::placeholder {
+    text-align: center;
+
+}
+.header_icon{
+    width: 10%;
+}
+.header_icon img {
+   width: 3vh;
+
+}
+main{
+    max-width: 1366px;
+    width: 100%;
+    margin: auto; 
+}
+.main_first{
+    background-image: url("img/cabeludo7.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 41.1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.main_first_titulo{
+    display: flex;
+    justify-content: space-evenly;
+    width: 98vw;
+    color: white;
+}
+.main_first_titulo h1{
+    font-size: 6vw;
+    height: 40vh;
+    width: 30vw;
+    line-height:90px;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight:bolder;
+    display: flex;
+    align-items: flex-end;
+}
+.main_first_titulo p{
+    font-size: 2.5vw;
+    font-weight: 300;
+    width: 29vw;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+.main_first_texto{
+    background-color: #9767A9;
+    height: 45vh;
+    display: flex;
+}
+.titulo{
+    width: 91vw;
+    display: flex;
+    justify-content: center;
+}
+.main_first_texto h2{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 3vw;
+    color: white;
+    width: 44vw;
+    height: 50vh;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+}
+.paragrafo_responsivo{
+    display: none;
+}
+.paragrafo_principal{
+    font-size: 1.5vw;
+    color: white;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 100;
+    text-align: left;
+    margin-top: 20px;
+}
+.paragrafo_principal p{
+    width: 42vw;
+}
+
+@media  (max-width:500px){
+    header{
+        height: 9vh;
+    }
+    header input{
+        display: none;
+    }
+    .header_icon{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+    .header_menu{
+        display: initial;
+        position: absolute;
+        top:0;
+        right: 70%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .header_menu img{
+        width: 10vw;
+        height: 9vh;
+    }
+    .header_menu ul{
+        list-style: none;
+        font-size: 0.75rem;
+        opacity: 0;
+        width: 30vw;
+    
+    }
+    .header_menu li{
+        color: white;
+        text-decoration: none;
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        padding-left: 5px;
+    }
+    li:hover {
+        background-color: #AC95BB;
+    }
+    .header_menu a{
+        text-decoration: none;
+        color: white;
+    }
+    .header_menu:hover ul{
+        background-color: #9767A9;
+        opacity: 100%;
+    }
+    .header_logo img{
+        width: 15vw;
+        height:;
+    }
+    .main_first{
+        background-image: url(img/cabeludo2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vw;
+
+    }
+    .main_first_titulo{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .main_first_titulo h1{
+        width: 60vw;
+        height: 40vh;
+        font-size: 13vw;
+        font-weight: 800;
+        text-align:;
+        display: flex;
+        align-items: flex-start;
+        margin-left: 5vw;
+    }
+    .main_first_titulo p{
+        margin-left: 5vw;
+        height: 40vh;
+        width: 60vw;
+        font-size: 5vw;
+        display: flex;
+        align-items: flex-start;
+    }
+    .main_first_texto{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: flex-start;
+        height: 100vh;
+    }
+    .main_first_texto h2{
+        font-size: 5vw;
+        width:71vw;
+        height: 20vh;
+    }
+    .paragrafo_principal{
+        display: none;
+    }
+    .paragrafo_responsivo{
+        display: initial;
+        color: white;
+        font-weight: 100;
+        height: 70vh;
+        line-height: 4vh;
+    }
+    .paragrafo_primeiro{
+        width: 70vw;
+        height: 15vh;
+        margin-left: 10vw;
+    }
+    .paragrafo_segundo{
+        width: 70vw;
+        height: 25vh;
+        margin-left: 10vw;
+    }
+    .paragrafo_terceiro{
+        width: 70vw;
+        height: 25vh;
+        margin-left: 10vw;
+    }
+     
+    
+}
